@@ -14,8 +14,8 @@ Upon launching, this script will:
 3. Right click on the .bat script and click Send to > Desktop
 4. On your desktop, Right click on the newly created shortcut and click Properties
 5. In the Target field, append the drive letter, where SM is currently installed. Make sure there's a space in-between the existing string and the newly added drive letter
-5.1 E.g. for me, SM is installed on drive **E** 
-5.2 So, in the Properties dialogue of the newly created shortcut, I would change the value in the Target field like so: `"D:\SuperMemo_Collection\Start & sync SM.bat"` to `"D:\SuperMemo_Collection\Start & sync SM.bat" E`
+- E.g. for me, SM is installed on drive **E** 
+- So, in the Properties dialogue of the newly created shortcut, I would change the value in the Target field like so: `"D:\SuperMemo_Collection\Start & sync SM.bat"` to `"D:\SuperMemo_Collection\Start & sync SM.bat" E`
 6. Press OK on the Properties window
 7. Optional: if you were using a shortcut to run SM, you can delete it
 
