@@ -9,7 +9,7 @@ Upon launching, this script will:
 3. Once SM is closed, it will prompt to save your collection to git
 
 # Setup
-1. Download the .bat script
+1. Download `Start & sync SM.bat`
 2. Place the script in your git folder together with your SM collection
 3. Right click on the .bat script and click Send to > Desktop
 4. On your desktop, Right click on the newly created shortcut and click Properties
