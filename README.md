@@ -14,8 +14,8 @@ Upon launching, this script will:
 3. Right click on the .bat script and click Send to > Desktop
 4. On your desktop, Right click on the newly created shortcut and click Properties
 5. In the Target field, append the drive letter, where SM is currently installed. Make sure there's a space in-between the existing string and the newly added drive letter
-5.1 E.g. for me, SM is installed on drive **E** 
-5.2 So, I would change the value in the Target field: `"D:\SuperMemo_Collection\Start & sync SM.bat"` to `"D:\SuperMemo_Collection\Start & sync SM.bat" E`
+- E.g. for me, SM is installed on drive **E** 
+- So, in the Properties dialogue of the newly created shortcut, I would change the value in the Target field like so: `"D:\SuperMemo_Collection\Start & sync SM.bat"` to `"D:\SuperMemo_Collection\Start & sync SM.bat" E`
 6. Press OK on the Properties window
 7. Optional: if you were using a shortcut to run SM, you can delete it
 
@@ -45,6 +45,7 @@ This can be changes, if desired. E.g. if you store additonal information in the 
 
 # Notes
 - This script is nothing too complicated - you can see that it's a few git commands to sync the collection, mixed in with a few readable prompts. I've used it myself for ~1.5 months+ as of the writing of this readme file. Still, I can't hold any responsibility if something goes horribly wrong - use at your own risk and all that
+- After setting up the script, make sure to make a few test changes to ensure that everything is working as you would expect (e.g. making a simple text edit on 1 PC, and then launching the script on the other PC and expecting to see the change) 
 - The script supports installation of SM on different drives, but non-default installation paths are not supported at the moment. E.g. SM must be installed at `X:\SuperMemo\`
 - In the event where no Internet connection is present, there is still a benefit of using this script compared to launching standalone SuperMemo: this script will create commits every time you close SuperMemo (but won't be able to push them online). This is better because it allows you to work with more granular changes, should you wish to revert them
 - Any questions - let me know, and I'll try to do a better write up/explain
