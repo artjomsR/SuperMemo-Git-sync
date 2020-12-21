@@ -22,7 +22,7 @@ Upon launching, this script will:
 # How to use
 - Use this script instead of the normal SuperMemo shortcut - it will ensure you have the latest copy of your collection before you start working on it and will update the latest copy when you're finished
 - This is especially true for multiple devices: if you setup this script on multiple PCs then you don't need to worry about having the latest copy of your collection. As long as you only run this script (and not SM directly) then you can always pick up where you left off at any of your workstations
-- **Do not** use this script to work on multiple devices **in parallel**: not only is this unefficient (as you'll see the same elements on every device, duplicating your efforts) but this will also create conflicting commits in git: eventually, when you'll try to sync your work between your devices, you'll get conflicts in git which would need to be resolved
+- **Do not** use this script to work on multiple devices **in parallel**: not only is this inefficient (as you'll see the same elements on every device, duplicating your efforts) but this will also create conflicting commits in git: eventually, when you'll try to sync your work between your devices, you'll get conflicts in git which would need to be resolved
 	- Always work on one device at a time. When you wish to transfer to a new device, close SuperMemo on the original machine. Then, launch this script on your new device - you should see git notifications that it's updating some files
 	- If you accidentally launch SuperMemo, modified files may prevent git from syncing your latest changes from other devices. To resolve this, you can use 'git stash' (as described in the next section)
 
@@ -40,7 +40,7 @@ If you've accidentally did a `cl` where you didn't intend to, you can get your c
 ## Controlling what is synced by this script
 Every time you close SuperMemo, `gitAddFiles` function is called, which will sync the collection with git. Out of the box, it does `git add -A *`, where `*` stands for all files in the folder. This means that every time you close SuperMemo, all files in the collection will be saved. This configuration will work for the majority of people.
 
-This can be changed, if desired. E.g. if you store additonal information in the same git repo, but only choose to save SuperMemo related files when your close SuperMemo. To do so, see https://git-scm.com/docs/git-add
+This can be changed, if desired. E.g. if you store additional information in the same git repo, but only choose to save SuperMemo related files when your close SuperMemo. To do so, see https://git-scm.com/docs/git-add
 
 
 # Notes
