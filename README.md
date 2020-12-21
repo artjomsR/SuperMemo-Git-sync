@@ -38,13 +38,13 @@ Typing `cl` will clean the dirty files and sync the latest version of the knowle
 If you've accidentally did a `cl` where you didn't intend to, you can get your changes back by opening _git bash_ in your knowledge folder and typing `git stash pop`. Previous versions are recoverable too, see: https://git-scm.com/docs/git-stash
 
 ## Controlling what is synced by this script
-Every time you close SuperMemo, `gitAddFiles` function is called, which will sync the collection with git. Out of the box, it does `git add -A *`: `*` stands for all files in the folder, meaning, every time you close SuperMemo the whole folder will be saved. This will work for the majority of people.
+Every time you close SuperMemo, `gitAddFiles` function is called, which will sync the collection with git. Out of the box, it does `git add -A *`, where `*` stands for all files in the folder. This means that every time you close SuperMemo, all files in the collection will be saved. This configuration will work for the majority of people.
 
-This can be changes, if desired. E.g. if you store additonal information in the same git repo, but only choose to save SuperMemo related files when your close SuperMemo. To do so, see https://git-scm.com/docs/git-add
+This can be changed, if desired. E.g. if you store additonal information in the same git repo, but only choose to save SuperMemo related files when your close SuperMemo. To do so, see https://git-scm.com/docs/git-add
 
 
 # Notes
-- This script is nothing too complicated - you can see that it's a few git commands to sync the collection, mixed in with a few readable prompts. I've used it myself for ~1.5 months+ as of the writing of this readme file. Still, I can't hold any responsibility if something goes horribly wrong - use at your own risk and all that
+- This script is nothing too complicated - you can see that it's a few git commands to sync the collection, mixed in with a few readable prompts. I've used it myself for 4 months+ as of the writing of this readme file. Still, I can't hold any responsibility if something goes horribly wrong - use at your own risk and all that
 - After setting up the script, make sure to make a few test changes to ensure that everything is working as you would expect (e.g. making a simple text edit on 1 PC, and then launching the script on the other PC and expecting to see the change) 
 - The script supports installation of SM on different drives, but non-default installation paths are not supported at the moment. E.g. SM must be installed at `X:\SuperMemo\`
 - In the event where no Internet connection is present, there is still a benefit of using this script compared to launching standalone SuperMemo: this script will create commits every time you close SuperMemo (but won't be able to push them online). This is better because it allows you to work with more granular changes, should you wish to revert them
