@@ -11,6 +11,8 @@ If "%INPUT%"=="cl" (
   git reset --hard
   git clean -i
   git pull
+  echo Current folder is now clean. Google "git stash" if you need to get your changes back.
+  pause
 )
 
 echo Started SM...
